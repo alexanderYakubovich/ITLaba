@@ -1,0 +1,119 @@
+
+{
+   "Accountant": [{
+      
+      "name": "Kate",
+      "city": "Brest",
+      "year": 1973,
+      "salary": 1000,
+      "personalStamp": "StampOfCompany",
+      "date": "1996-06-09",
+      "position": "Accountant"
+   }],
+   "CEO": [{
+      
+      "name": "Harry",
+      "city": "Tolochin",
+      "year": 1954,
+      "salary": 3000,
+      "companyCar": "Volvo",
+      "date": "2017-08-16",
+      "position": "CEO"
+   }],
+   "Lawyer": [{
+    
+      "name": "Victor",
+      "city": "Minsk",
+      "year": 1983,
+      "salary": 800,
+      "lawyersLicense": "License",
+      "date": "1996-06-09",
+      "position": "Lawyer"
+   }],
+   "Cleaner": [{
+   
+      "name": "Lena",
+      "city": "Tyla",
+      "year": 1967,
+      "salary": 500,
+      "сleaningEquipment": "Broom",
+      "date": "2013-08-31",
+      "position": "Cleaner"
+   }],
+   "MobileDev": [{
+      "@id": "5",
+      "name": "Adolf",
+      "city": "Orsha",
+      "year": 1985,
+      "salary": 1200,
+      "projectLanguage": "JAVA",
+      "platformName": "IOS",
+      "project": "StAXOne",
+      "date": "2008-07-05",
+      "position": "MobileDev"
+   }],
+   "WebDev": [{
+     
+      "name": "Sergey",
+      "city": "Pinsk",
+      "year": 1993,
+      "salary": 1300,
+      "projectLanguage": "C++",
+      "project": "StAXTwo",
+      "date": "2018-10-16",
+      "position": "WebDev"
+   }],
+   "Automation": [
+      {
+   
+         "name": "Den",
+         "city": "Vitebsk",
+         "year": 1989,
+         "salary": 1400,
+         "projectLanguage": "SCALA",
+         "kindOfTest": "SystemTesting",
+         "project": "StAXThree",
+         "date": "2015-12-31",
+         "position": "Automation"
+      },
+      {
+   
+         "name": "Evgenii",
+         "city": "Pinsk",
+         "year": 1982,
+         "salary": 1500,
+         "projectLanguage": "Paskal",
+         "kindOfTest": "FunctionalTesting",
+         "project": "StAXFour",
+         "date": "2018-03-08",
+         "position": "Automation"
+      }
+   ],
+   "ManualQA": [{
+
+      "name": "Ben",
+      "city": "Gomel",
+      "year": 1977,
+      "salary": 1150,
+      "device": "IPhone",
+      "project": "StAXFive",
+      "date": "2017-08-02",
+      "position": "ManualQA"
+   }],
+   "BetaQA": [{
+   
+      "name": "Alex",
+      "city": "Bobr",
+      "year": 1987,
+      "salary": 1230,
+      "device": "Nokia",
+      "project": "StAXSix",
+      "date": "1991-01-10",
+      "position": "BetaQA"
+   }]
+}
+
+
+10779 yjvt
+
+222-23-06
