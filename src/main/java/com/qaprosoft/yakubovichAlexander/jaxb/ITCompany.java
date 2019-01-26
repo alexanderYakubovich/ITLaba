@@ -18,71 +18,71 @@ import com.qaprosoft.yakubovichAlexander.main.java.employee.administrative.Lawye
 @XmlRootElement(name = "ITCompany")
 public class ITCompany {
 
-	@XmlElement(name = "Accountant")
-	private List<Accountant> accountantList;
+    @XmlElement(name = "Accountant")
+    private List<Accountant> accountantList;
 
-	@XmlElement(name = "CEO")
-	private List<CEO> ceoList;
+    @XmlElement(name = "CEO")
+    private List<CEO> ceoList;
 
-	@XmlElement(name = "Lawyer")
-	private List<Lawyer> lawyerList;
+    @XmlElement(name = "Lawyer")
+    private List<Lawyer> lawyerList;
 
-	@XmlElement(name = "Cleaner")
-	private List<Cleaner> cleanerList;
+    @XmlElement(name = "Cleaner")
+    private List<Cleaner> cleanerList;
 
-	@XmlElement(name = "MobileDev")
-	private List<MobileDev> mobileDev;
+    @XmlElement(name = "MobileDev")
+    private List<MobileDev> mobileDev;
 
-	@XmlElement(name = "WebDev")
-	private List<WebDev> webDevList;
+    @XmlElement(name = "WebDev")
+    private List<WebDev> webDevList;
 
-	@XmlElement(name = "Automation")
-	private List<Automation> automatList;
+    @XmlElement(name = "Automation")
+    private List<Automation> automatList;
 
-	@XmlElement(name = "ManualQA")
-	private List<ManualQA> manualQAList;
+    @XmlElement(name = "ManualQA")
+    private List<ManualQA> manualQAList;
 
-	@XmlElement(name = "BetaQA")
-	private List<BetaQA> betaQAList;
+    @XmlElement(name = "BetaQA")
+    private List<BetaQA> betaQAList;
 
-	public ITCompany() {
-		super();
-	}
+    public ITCompany() {
+	super();
+    }
 
-	public List<Accountant> getAccountantList() {
-		return accountantList;
-	}
+    public List<Accountant> getAccountantList() {
+	return accountantList;
+    }
 
-	public List<CEO> getCeoList() {
-		return ceoList;
-	}
+    public List<CEO> getCeoList() {
+	return ceoList;
+    }
 
-	public List<Lawyer> getLawyerList() {
-		return lawyerList;
-	}
+    public List<Lawyer> getLawyerList() {
+	return lawyerList;
+    }
 
-	public List<Cleaner> getCleanerList() {
-		return cleanerList;
-	}
+    public List<Cleaner> getCleanerList() {
+	return cleanerList;
+    }
 
-	public List<MobileDev> getMobileDevList() {
-		return mobileDev;
-	}
+    public List<MobileDev> getMobileDevList() {
+	return mobileDev;
+    }
 
-	public List<WebDev> getWebDevList() {
-		return webDevList;
-	}
+    public List<WebDev> getWebDevList() {
+	return webDevList;
+    }
 
-	public List<Automation> getAutomatList() {
-		return automatList;
-	}
+    public List<Automation> getAutomatList() {
+	return automatList;
+    }
 
-	public List<ManualQA> getManualQAList() {
-		return manualQAList;
-	}
+    public List<ManualQA> getManualQAList() {
+	return manualQAList;
+    }
 
-	public List<BetaQA> getBetaQAList() {
-		return betaQAList;
-	}
+    public List<BetaQA> getBetaQAList() {
+	return betaQAList;
+    }
 
 }
