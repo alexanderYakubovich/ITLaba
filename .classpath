@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+  <classpathentry kind="var" path="M2_REPO/org/mybatis/mybatis/3.2.8/mybatis-3.2.8.jar" sourcepath="M2_REPO/org/mybatis/mybatis/3.2.8/mybatis-3.2.8-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/ibatis/ibatis-core/3.0/ibatis-core-3.0.jar" sourcepath="M2_REPO/org/apache/ibatis/ibatis-core/3.0/ibatis-core-3.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar" sourcepath="M2_REPO/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar" sourcepath="M2_REPO/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar" sourcepath="M2_REPO/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/qaprosoft/yakubovichalexander/AdministrativeStaff/0.0.1-SNAPSHOT/AdministrativeStaff-0.0.1-SNAPSHOT.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.6/commons-io-2.6.jar" sourcepath="M2_REPO/commons-io/commons-io/2.6/commons-io-2.6-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.9.7/jackson-annotations-2.9.7.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.9.7/jackson-annotations-2.9.7-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar" sourcepath="M2_REPO/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar" sourcepath="M2_REPO/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/logging/log4j/log4j-core/2.6.1/log4j-core-2.6.1.jar" sourcepath="M2_REPO/org/apache/logging/log4j/log4j-core/2.6.1/log4j-core-2.6.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/logging/log4j/log4j-api/2.6.1/log4j-api-2.6.1.jar" sourcepath="M2_REPO/org/apache/logging/log4j/log4j-api/2.6.1/log4j-api-2.6.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/logging/log4j/log4j-1.2-api/2.3/log4j-1.2-api-2.3.jar" sourcepath="M2_REPO/org/apache/logging/log4j/log4j-1.2-api/2.3/log4j-1.2-api-2.3-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar" sourcepath="M2_REPO/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/junit/junit5-engine/5.0.0-ALPHA/junit5-engine-5.0.0-ALPHA.jar" sourcepath="M2_REPO/org/junit/junit5-engine/5.0.0-ALPHA/junit5-engine-5.0.0-ALPHA-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/junit/junit5-api/5.0.0-ALPHA/junit5-api-5.0.0-ALPHA.jar" sourcepath="M2_REPO/org/junit/junit5-api/5.0.0-ALPHA/junit5-api-5.0.0-ALPHA-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/opentest4j/opentest4j/1.0.0-ALPHA/opentest4j-1.0.0-ALPHA.jar" sourcepath="M2_REPO/org/opentest4j/opentest4j/1.0.0-ALPHA/opentest4j-1.0.0-ALPHA-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/junit/junit-commons/5.0.0-ALPHA/junit-commons-5.0.0-ALPHA.jar" sourcepath="M2_REPO/org/junit/junit-commons/5.0.0-ALPHA/junit-commons-5.0.0-ALPHA-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/junit/junit-engine-api/5.0.0-ALPHA/junit-engine-api-5.0.0-ALPHA.jar" sourcepath="M2_REPO/org/junit/junit-engine-api/5.0.0-ALPHA/junit-engine-api-5.0.0-ALPHA-sources.jar"/>
+</classpath>
