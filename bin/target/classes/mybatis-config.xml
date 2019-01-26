@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.User" alias="User"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.Address" alias="Address"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.Car" alias="Car"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.CarModel" alias="CarModel"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.Client" alias="Client"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.Driver" alias="Driver"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.DriverLicense" alias="DriverLicense"/>
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.InspectionCertificate" alias="InspectionCertificate"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.Insurance" alias="Insurance"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.MedicalSertificate" alias="MedicalSertificate"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.Order" alias="Order"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.Payment" alias="Payment"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.Route" alias="Route"/> 
+		<typeAlias type="com.qaprosoft.yakubovichAlexander.dataBase.entity.Service" alias="Service"/>
+	</typeAliases>
+
+    <environments default="local">
+        <environment id="local">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url"
+					value="jdbc:mysql://localhost:3306/uberdb" />
+				<property name="username" value="root" />
+				<property name="password" value="57827444" />
+            </dataSource>
+        </environment>
+    </environments>
+   <mappers>
+		<mapper resource="mappers/AddressMapper.xml"/>
+		<mapper resource="mappers/CarMapper.xml"/>
+		<mapper resource="mappers/CarModelMapper.xml"/>
+		<mapper resource="mappers/ClientMapper.xml" />
+		<mapper resource="mappers/DriverLicenseMapper.xml" />
+		<mapper resource="mappers/DriverMapper.xml" />
+		<mapper resource="mappers/InspectionCertificateMapper.xml" />
+		<mapper resource="mappers/InsuranceMapper.xml" />
+		<mapper resource="mappers/MedicalSertificateMapper.xml" />
+		<mapper resource="mappers/OrderMapper.xml" />
+		<mapper resource="mappers/PaymentMapper.xml" />
+		<mapper resource="mappers/RouteMapper.xml" />
+		<mapper resource="mappers/ServiceMapper.xml" />
+		<mapper resource="mappers/UserMapper.xml" />
+		
+
+	</mappers>
+
+</configuration>
+
+

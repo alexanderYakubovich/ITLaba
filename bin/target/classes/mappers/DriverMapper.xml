@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.qaprosoft.yakubovichAlexander.dataBase.interfaces.IDriverDAO">
+	<select id="getById" parameterType="java.lang.Long"
+		resultMap="Driver">
+		SELECT * FROM Drivers d 
+		LEFT JOIN Users u ON u.id = d.user_id
+		LEFT JOIN Driver_licenses drl ON drl.driver_id = d.id
+		LEFT JOIN Inspections_certificates ic ON ic.driver_id = d.id
+		LEFT JOIN Insurances i ON i.driver_id = d.id
+		LEFT JOIN Medical_Sertificates ms ON ms.driver_id = d.id
+		where d.id=#{id}
+	</select>
+
+	<resultMap type="Driver" id="Driver" autoMapping="false">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="rating" property="rating" />
+		<result column="number_phone" property="numberPhone" />
+		<result column="user_id" property="userId" />
+			<association property='driverLicense' resultMap='DriverLicenseResultMap'/>
+			<association property='inspectionCertificate' resultMap='InspectionCertificateResultMap'/>
+			<association property='insurance' resultMap='InsuranceResultMap'/>
+			<association property='medicalSertificate' resultMap='MedicalSertificateResultMap'/>
+	</resultMap>
+	
+		<resultMap type="DriverLicense" id="DriverLicenseResultMap" autoMapping="false">
+		<id column="id" property="id"/>
+		<result column="ex_date" property="exDate"/>
+		<result column="driver_id" property="driverId"/>
+	</resultMap>
+	
+	<resultMap type="InspectionCertificate" id="InspectionCertificateResultMap" autoMapping="false">
+		<id column="id" property="id"/>
+		<result column="driver_id" property="driverId"/>
+		<result column="exp_date" property="expDate"/>
+	</resultMap>
+	
+	<resultMap type="Insurance" id="InsuranceResultMap" autoMapping="false">
+		<id column="id" property="id"/>
+		<result column="validity" property="validity"/>
+		<result column="city" property="city"/>
+		<result column="driving_experience" property="drivingExperience"/>
+		<result column="driver_id" property="driverId"/>
+	</resultMap>
+		
+	<resultMap type="MedicalSertificate" id="MedicalSertificateResultMap" autoMapping="false">
+		<id column="id" property="id" />
+		<result column="valid_until" property="validUntil"/>
+		<result column="driver_id" property="driverId"/>
+	</resultMap>
+</mapper>

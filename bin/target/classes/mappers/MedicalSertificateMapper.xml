@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.qaprosoft.yakubovichAlexander.dataBase.interfaces.IMedicalSertificateDAO">
+	<select id="getById" parameterType="java.lang.Long"
+		resultMap="MedicalSertificate" >
+		select id, valid_until, driver_id from Medical_sertificates ms where ms.id =#{id}
+	</select>
+
+	<resultMap type="MedicalSertificate" id="MedicalSertificate" autoMapping="false">
+		<id column="id" property="id" />
+		<result column="valid_until" property="validUntil" />
+		<result column="driver_id" property="driverId" />
+	</resultMap>
+</mapper>
