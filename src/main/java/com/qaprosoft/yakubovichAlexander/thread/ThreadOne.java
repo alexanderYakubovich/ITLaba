@@ -8,33 +8,33 @@ import org.apache.log4j.Logger;
 
 public class ThreadOne extends Thread {
 
-	private final static Logger LOGGER = LogManager.getLogger(ThreadOne.class);
+    private final static Logger LOGGER = LogManager.getLogger(ThreadOne.class);
 
-	private Lock lock1 = new ReentrantLock();
+    private Lock lock1 = new ReentrantLock();
 
-	public ThreadOne(Lock lock1) {
-		this.lock1 = lock1;
+    public ThreadOne(Lock lock1) {
+	this.lock1 = lock1;
+    }
+
+    ThreadTwo t2 = new ThreadTwo();
+
+    public void run() {
+	lock1.lock();
+
+	try {
+	    sleep(500);
+	} catch (InterruptedException e) {
+	    LOGGER.info(e);
 	}
-
-	ThreadTwo t2 = new ThreadTwo();
-
-	public void run() {
-		lock1.lock();
-
-		try {
-			sleep(500);
-		} catch (InterruptedException e) {
-			LOGGER.info(e);
-		}
-		LOGGER.info("Thread-1 lock1");
-		try {
-			sleep(500);
-		} catch (InterruptedException e) {
-			LOGGER.info(e);
-		}
-		t2.run();
-
-		lock1.unlock();
+	LOGGER.info("Thread-1 lock1");
+	try {
+	    sleep(500);
+	} catch (InterruptedException e) {
+	    LOGGER.info(e);
 	}
+	t2.run();
+
+	lock1.unlock();
+    }
 
 }
