@@ -15,6 +15,7 @@ public class Text {
 	return lowerCase;
     }
 
+
     public String toReplace(String str) {
 	String result = StringUtils.replace(str, "-", " ");
 	return result;
