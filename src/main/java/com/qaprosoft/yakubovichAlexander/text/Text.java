@@ -19,7 +19,6 @@ public class Text {
 	String result = StringUtils.replace(str, "-", " ");
 	return result;
     }
-
     public void read() throws Exception {
 	String str;
 	String pathI;
